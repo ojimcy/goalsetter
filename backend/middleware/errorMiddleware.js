@@ -1,6 +1,6 @@
 const { stack } = require("../routes/goalRoutes")
 
-const errHandler = (err, req, res, next) => {
+const errorHandler = (err, req, res, next) => {
     const statusCode = res.statusCode ? res.statusCode : 500
 
     res.status(statusCode)
@@ -12,5 +12,5 @@ const errHandler = (err, req, res, next) => {
 }
 
 module.exports = {
-    errHandler
+    errorHandler
 }
